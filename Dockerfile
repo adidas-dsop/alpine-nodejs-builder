@@ -1,4 +1,4 @@
-FROM dsop/alpine-nodejs
+FROM obcon/nodejs
 
-RUN apk --update add python make gcc musl-dev g++ && \
+RUN apk --update add python make gcc musl-dev g++ git rsync && \
   rm -rf /var/cache/apk/*
