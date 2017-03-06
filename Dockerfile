@@ -1,4 +1,4 @@
-FROM dsop/alpine-nodejs:6.9.2
+FROM dsop/alpine-nodejs
 
 RUN apk --update add python make gcc musl-dev g++ git rsync && \
   rm -rf /var/cache/apk/*
